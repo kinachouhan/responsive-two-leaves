@@ -300,7 +300,20 @@ header {
     width: 100%;
 }
 
+.sec2 {
+    padding: 0px 20px 40px 20px;
+    width: 100%;
+}
+
 .container-3 {
+    height: 100%;
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 2rem;
+}
+
+.container-11 {
     height: 100%;
     width: 100%;
     display: grid;
@@ -317,7 +330,23 @@ header {
     gap: 1.5rem;
 }
 
+.boxed {
+    height: 100%;
+    width: 100%;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+    border: 1px solid black;
+    border-radius: 1rem;
+    background-color: #C0DBFF;
+}
+
 .img-div img:hover {
+    transform: scale(1.1);
+}
+
+.img-div2 img:hover {
     transform: scale(1.1);
 }
 
@@ -325,6 +354,42 @@ header {
     overflow: hidden;
     border-radius: 10px;
     border: 1px solid black;
+}
+
+.img-div2 {
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    background-color: #2A2857;
+    border-radius: 1rem 1rem 0px 0px;
+    ;
+}
+
+.details2 {
+    font-family: RobotoMono;
+    padding-bottom: 4rem;
+}
+
+.details2 h2 {
+    font-weight: 200;
+    font-size: 1.3rem;
+    text-align: center;
+}
+
+.img-div img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.2s ease;
+}
+
+.img-div2 img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.4s ease;
 }
 
 .img-div img {
@@ -874,19 +939,21 @@ header {
     height: 100%;
 }
 
-.container-9{
+.container-9 {
     background-color: #9F6429;
     height: 110vh;
-    
+
 }
-.mood{
+
+.mood {
     display: flex;
     align-items: center;
     flex-direction: column;
     padding-top: 8rem;
     gap: 1rem;
 }
-.mood h1{
+
+.mood h1 {
     font-family: midtree;
     font-size: 4rem;
     background-color: #FFCB96;
@@ -895,17 +962,20 @@ header {
     border-radius: 10px;
     padding: 0px 4px;
 }
-.mood h2{
+
+.mood h2 {
     font-family: midtree;
     font-size: 5.5rem;
     color: white;
     text-transform: uppercase;
 }
-.mood p{
+
+.mood p {
     color: white;
     font-family: RobotoMono;
 }
-.tea{
+
+.tea {
     background-color: #FFCB96;
     margin: 80px 30px 30px 30px;
     display: flex;
@@ -915,18 +985,21 @@ header {
     position: relative;
     height: 53%;
 }
-.tea img{
+
+.tea img {
     position: absolute;
     top: -10%;
 }
-.nice{
-    width: 50%; 
+
+.nice {
+    width: 50%;
     display: flex;
     flex-direction: column;
     justify-content: center;
     gap: 1rem;
 }
-.nice h1{
+
+.nice h1 {
     font-family: midtree;
     font-size: 4rem;
     background-color: #F09F54;
@@ -936,16 +1009,19 @@ header {
     padding: 0px 4px;
     width: fit-content;
 }
-.nice h2{
-    font-family: Reckless , Arial, Helvetica, sans-serif;
+
+.nice h2 {
+    font-family: Reckless, Arial, Helvetica, sans-serif;
     font-size: 4rem;
     font-weight: 100;
 }
-.nice p{
+
+.nice p {
     font-family: figtree, sans-serif;
     font-size: 1.4rem;
     width: 60%;
 }
+
 .nice button {
     padding: 15px 50px;
     background-color: white;
@@ -957,7 +1033,8 @@ header {
     border: none;
     border: 1px solid black;
 }
-.left-arrow{
+
+.left-arrow {
     position: absolute;
     bottom: 45%;
     left: 5%;
@@ -967,7 +1044,8 @@ header {
     border: 1px solid black;
     padding: 0.2rem;
 }
-.right-arrow{
+
+.right-arrow {
     position: absolute;
     bottom: 45%;
     right: 5%;
@@ -978,9 +1056,239 @@ header {
     padding: 0.2rem;
 }
 
+.container-10 {
+    padding: 9rem 12rem;
+}
+
+.journal h1 {
+    font-family: midtree;
+    font-size: 4rem;
+    background-color: #FFB500;
+    border: 1px solid black;
+    transform: rotate(-3deg);
+    border-radius: 10px;
+    padding: 0px 4px;
+    width: fit-content;
+}
+
+.journal h2 {
+    font-family: Reckless, Arial, Helvetica, sans-serif;
+    font-size: 70px;
+    font-weight: 100;
+    padding-top: 2rem;
+}
+
+.container-12 {
+    height: 100vh;
+    width: 100%;
+    position: relative;
+}
+
+.bg-image {
+    height: 100%;
+    width: 100%;
+    overflow: hidden;
+}
+
+.bg-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.story {
+    padding: 3rem;
+    background-color: #F26412;
+    color: white;
+    border: 1px solid black;
+    border-radius: 1rem;
+    position: absolute;
+    top: 5%;
+    left: 2%;
+    height: 86%;
+    width: 35%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.story-1 h1 {
+    font-family: Reckless, Arial, Helvetica, sans-serif;
+    font-size: 5rem;
+    font-weight: 300;
+}
+
+.story-1 {
+    padding-top: 2rem;
+}
+
+.story p {
+    font-family: figtree, sans-serif;
+    font-size: 1.5rem;
+    width: 80%;
+}
+
+.story button {
+    width: fit-content;
+    background-color: white;
+    color: black;
+    border: 1px solid black;
+    border-radius: 999px;
+    padding: 18px 60px;
+    font-size: 1.1rem;
+    cursor: pointer;
+    margin: 2rem 0px;
+}
+
+.container-13 {
+    background-color: #C1E4F8;
+    display: flex;
+    gap: 2.5rem;
+    flex-direction: column;
+    padding: 4rem 15rem;
+}
+
+.container-13 h1 {
+    font-family: midtree;
+    font-size: 3rem;
+}
+
+.container-13 h2 {
+    font-family: Reckless, Arial, Helvetica, sans-serif;
+    font-size: 2.2rem;
+    font-weight: 200;
+    width: 50%;
+    color: #404248;
+}
+
+.sub input {
+    width: 100%;
+    padding: 1rem;
+    font-size: 1.4rem;
+    border-radius: 10px;
+    border: 1px solid black;
+    color: #c1c1c2;
+}
+
+.sub {
+    display: flex;
+    gap: 1rem;
+}
+
+.sub button {
+    padding: 1rem 3rem;
+    background-color: #2A2857;
+    color: white;
+    border: none;
+    border-radius: 2rem;
+    font-size: 1.4rem;
+    cursor: pointer;
+    border: 1px solid black;
+}
+
+.social {
+    display: flex;
+    gap: 1rem;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.social-media {
+    display: flex;
+    gap: 1rem;
+}
+
+.social-media i {
+    border: 1px solid black;
+    border-radius: 50%;
+    padding: 0.5rem;
+    font-size: 2rem;
+}
+
+.container-14 {
+    background-color: #C1E4F8;
+    color: white;
+    padding: 2rem;
+
+}
+
+.foot {
+    background-color: #2A2857;
+    border-radius: 1rem;
+    display: flex;
+    flex-wrap: wrap;
+    padding: 3rem 4rem;
+    gap: 5rem;
+}
+
+.links h3 {
+    font-family: Reckless, Arial, Helvetica, sans-serif;
+    padding-bottom: 1.2rem;
+    font-size: 1.8rem;
+    font-weight: 400;
+}
+
+.links p {
+    font-family: figtree;
+    padding-bottom: 0.2rem;
+    color: #9290A1;
+    font-size: 1.4rem;
+}
+
+footer{
+    background-color: #C1E4F8;
+    height: 50%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+     gap: 5rem;
+}
+footer img{
+    height: 40%;
+    width: 20%;
+}
+footer p{
+    font-family: figtree;
+    color: #4F545D;
+    font-family: RobotoMono;
+    padding-bottom: 1rem;
+}
+
+.circle{
+    color: white;
+    position: fixed;
+    bottom: 20px;
+    left: 10px;
+   
+}
+.circle svg{
+    height: 50px;
+    width: 50px;
+     padding: 0.5rem;
+    border-radius: 50%;
+     background-color: #60C6A6;
+}
 
 @media(max-width:768px) {
-    
+    footer img{
+    height: 40%;
+    width: 40%;
+}
+    .journal h2 {
+        font-size: 25px;
+        width: 100%;
+    }
+
+    .container-10 {
+        padding: 2rem 0.5rem;
+    }
+
+    .journal h1 {
+        font-size: 3rem;
+    }
+
     .container-5 {
         height: 250vh;
     }
@@ -1025,21 +1333,122 @@ header {
 
 
 @media (max-width: 1024px) {
+    .container-13 {
+        gap: 1.5rem;
+        padding: 7rem 2rem;
+    }
+
+    .container-13 h1 {
+        font-size: 2.5rem;
+    }
+
+    .container-13 h2 {
+        font-size: 2rem;
+        width: 100%;
+    }
+
+    .sub input {
+        padding: 1rem;
+        font-size: 1rem;
+    }
+
+    .sub {
+        display: flex;
+        flex-direction: column;
+        gap: 1.2rem;
+        width: 100%;
+    }
+
+    .social {
+        display: flex;
+        flex-direction: column;
+        gap: 2rem;
+    }
+
+    .social-media {
+        display: flex;
+        justify-content: flex-start;
+        gap: 1rem;
+        width: 100%;
+    }
+
+    .container-12 {
+        height: 100vh;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .bg-image {
+        height: 75%;
+        width: 100%;
+    }
+
+    .story {
+        border: none;
+        border-radius: 0;
+        padding: 0rem;
+        top: 70%;
+        left: 0;
+        height: 35%;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 2rem;
+    }
+
+    .story-1 h1 {
+        font-size: 3rem;
+    }
+
+    .story-1 {
+        padding-top: 0rem;
+    }
+
+    .story p {
+        font-size: 1.5rem;
+        width: 100%;
+        padding-bottom: 2rem;
+    }
+
+    .story button {
+        width: 100%;
+        margin: 0px;
+    }
+
+    .container-10 {
+        padding: 3rem;
+    }
+
+    .journal h1 {
+        font-size: 3rem;
+    }
+
+    .journal h2 {
+        font-size: 35px;
+        width: 60%;
+    }
+
     .container-8 {
         flex-direction: column;
         height: 130vh;
     }
-    .nice{
+
+    .nice {
         display: none;
     }
-    .mood{
-        padding: 10vw;
+
+    .mood {
+        padding-top: 5rem;
     }
-    .mood h2{
+
+    .mood h2 {
         font-size: 4rem;
         width: 60%;
     }
-    .mood h1{
+
+    .mood h1 {
         font-size: 3rem;
     }
 
@@ -1055,16 +1464,19 @@ header {
         justify-content: center;
         align-items: center;
     }
-   .right h1{
-    text-align: center;
-    font-size: 3rem;
-   }
-   .right p{
-    font-size: 1.4rem;
-   }
-   .right button{
-    padding: 15px 10vw;
-   }
+
+    .right h1 {
+        text-align: center;
+        font-size: 3rem;
+    }
+
+    .right p {
+        font-size: 1.4rem;
+    }
+
+    .right button {
+        padding: 15px 10vw;
+    }
 
     .part {
         flex: 0 0 calc(50% - 10px);
@@ -1206,7 +1618,15 @@ header {
         grid-template-columns: repeat(3, 1fr);
     }
 
+    .container-11 {
+        grid-template-columns: repeat(3, 1fr);
+    }
+
     .box:nth-child(4) {
+        display: none;
+    }
+
+    .boxed:nth-child(4) {
         display: none;
     }
 
@@ -1216,6 +1636,10 @@ header {
 
     .details h2 {
         font-size: 24px;
+    }
+
+    .details2 h2 {
+        font-size: 1rem;
     }
 
     .details h4 {
@@ -1233,9 +1657,63 @@ header {
         padding: 4px 8px;
         font-size: 14px;
     }
+
+    .foot {
+
+        display: flex;
+        flex-direction: column;
+        flex-wrap: nowrap;
+        padding: 3rem 2rem;
+        gap: 1rem;
+    }
 }
 
 @media (max-width: 768px) {
+    .container-12 {
+        height: 100vh;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .bg-image {
+        height: 50%;
+        width: 100%;
+    }
+
+    .story {
+        top: 45%;
+        left: 0;
+        height: 50%;
+        padding: 0rem 2rem;
+    }
+
+    .story-1 h1 {
+        font-size: 3rem;
+        text-align: center;
+    }
+
+    .story-1 {
+        padding-top: 0rem;
+    }
+
+    .story p {
+        font-size: 1rem;
+        width: 80%;
+        padding-bottom: 2rem;
+        text-align: center;
+    }
+
+    .story button {
+        width: fit-content;
+        margin: 0px;
+    }
+
+    .story-2 {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
     .container-4 {
         padding: 50px 20px;
         width: 100%;
@@ -1272,6 +1750,10 @@ header {
         grid-template-columns: repeat(2, 1fr);
     }
 
+    .container-11 {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
     .add {
         position: absolute;
         bottom: 35%;
@@ -1282,6 +1764,11 @@ header {
 
     .box:nth-child(3),
     .box:nth-child(4) {
+        display: none;
+    }
+
+    .boxed:nth-child(3),
+    .boxed:nth-child(4) {
         display: none;
     }
 
@@ -1370,21 +1857,44 @@ header {
         font-size: 2.2rem;
         padding: 0px 5px;
     }
-}
 
-@media (max-width: 480px) {
-    .tea img{
+     .container-13 {
+        padding: 2rem;
+    }
+
+    .container-13 h1 {
+        font-size: 2rem;
+    }
+
+    .container-13 h2 {
+        font-size: 1.5rem;
+
+    }
+
+    .sub button {
+        font-size: 1rem;
+    }
+
+    .journal h2 {
+        width: 100%;
+    }
+
+    .tea img {
         width: 100%;
         height: 50%;
     }
-    .mood h2{
-        font-size: 3.5rem;
+
+    .mood h2 {
+        font-size: 3.8rem;
         width: 100%;
+        text-align: center;
     }
-    .mood h1{
+
+    .mood h1 {
         font-size: 2.5rem;
     }
-    .nice{
+
+    .nice {
         display: block;
         width: 100%;
         display: flex;
@@ -1393,39 +1903,50 @@ header {
         padding-top: 60%;
         gap: 0.5rem;
     }
-    .nice h1{
+
+    .nice h1 {
         font-size: 2.5rem;
     }
-    .nice h2{
+
+    .nice h2 {
         font-size: 2.5rem;
         text-align: center;
     }
-    .nice p{
+
+    .nice p {
         font-size: 1.2rem;
     }
-    .tea{
-       display: flex;
-       flex-direction: column;
+
+    .tea {
+        display: flex;
+        flex-direction: column;
     }
-    
-    .right{
+
+    .right {
         padding: 0px 2rem;
     }
-    .right h1{
+
+    .right h1 {
         font-size: 2.5rem;
     }
-    .right p{
+
+    .right p {
         font-size: 0.8rem;
     }
-  
-    .right button{
+
+    .right button {
         width: 100%;
     }
+
     .part {
         flex: 0 0 100%;
     }
 
     .container-3 {
+        grid-template-columns: 1fr;
+    }
+
+    .container-11 {
         grid-template-columns: 1fr;
     }
 
@@ -1439,6 +1960,12 @@ header {
         display: none;
     }
 
+    .boxed:nth-child(2),
+    .boxed:nth-child(3),
+    .boxed:nth-child(4) {
+        display: none;
+    }
+
     .add {
         position: absolute;
         bottom: 30%;
@@ -1446,4 +1973,45 @@ header {
         padding: 5px 10px;
         font-size: 14px;
     }
+
+    .container-14 {
+        padding: 1rem;
+        width: 100%;
+    }
+    .foot {
+        display: flex;
+        flex-direction: column;
+        padding: 1rem;
+        width: 100%;
+        gap: 0.5rem;
+    }
+
+    .links {
+        width: 100%;
+        border-bottom: 1px solid rgba(255,255,255,0.2);
+        padding: 1rem 0;
+    }
+
+    .links h3 {
+        font-size: 1.3rem;
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        cursor: pointer;
+        font-family: Reckless;
+    }
+
+    .links p {
+        display: none;
+    }
+
+    .links h3::after {
+        content: "→";
+        font-size: 1.2rem;
+        transition: transform 0.3s ease;
+    }
 }
+
+
+
